@@ -3,18 +3,18 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def hola_mundo():
-    return 'Hola Mundo!!'
+def hello_world():
+    return 'Hello World!!'
 
 
-@app.route('/primera')
-def template_primera():
-    return render_template('primera_pagina.html')
+@app.route('/first')
+def template_first():
+    return render_template('first_page.html')
 
 
-@app.route('/segunda')
-def template_segunda():
-    return render_template('segunda_pagina.html')
+@app.route('/second')
+def template_second():
+    return render_template('second_page.html')
 
 
 
